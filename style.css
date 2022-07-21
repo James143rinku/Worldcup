@@ -57,6 +57,26 @@ header .header .left {
 header .header .left .content h1 {
     font-size: 3.5rem;
     line-height: 4rem;
+    background-color: #161616;
+    position: relative;
+    animation: text 3s 1;
+    -webkit-animation: text 3s ease 1;
+}
+
+@keyframes text {
+    0% {
+        color: #161616;
+        margin-bottom: -100px;
+    }
+
+    30% {
+        letter-spacing:15;
+ 
+    }
+
+    85% {
+        letter-spacing: 8px;
+    }
 }
 
 header .header .left .content p {
@@ -65,6 +85,8 @@ header .header .left .content p {
 
 header .header .left .content a i {
     margin-left: 10px;
+
+
 }
 
 header .header .right {
@@ -343,6 +365,15 @@ footer .social a {
     margin: 0 30px;
 }
 
+footer .social a:hover {
+    color: aqua;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
 
 /* ---------------Footer-section-End--------------- */
 
@@ -560,6 +591,15 @@ footer .social a {
 
     footer {
         padding: 20px 0;
+    }
+
+    footer .item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .social .a {
+        font-size: 2rem;
     }
     /* --------------footer-section-End--------- */
 }
